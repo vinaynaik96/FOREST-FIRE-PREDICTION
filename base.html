@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/static/styles.css">
+	</head>
+    <body>
+		<div class="results">
+			{% if pred > "0.5" %}
+				<h1 class='danger'>Oops! You have Fire.</h1>
+				<img class="gif" src="{{ url_for('static', filename='fire.jpg') }}">
+			{% else %}
+				<h1 class='safe'>Great! You are safe.</h1>
+				<img class="gif1" src="{{ url_for('static', filename='green.jpg') }}">
+			{% endif %}
+		</div>
+	</body>
+</html>

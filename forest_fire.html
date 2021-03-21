@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title class="title my-80">Forest Fire Prediction</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+
+    <body class="ok">
+      <div class='start'>
+        <!-- Website Title -->
+    	<div class="ml-container">
+            <h2 class='container-heading'><span class="heading_font">Forest Fire Predictor</span></h2>
+            <div class='description'>
+    			<p>Welcome to My Machine Learning Web App.</p>
+    	      </div>
+      </div>
+     
+
+        <!-- Text Area -->
+           	<div class="container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+          <div class="container-1">
+                <input class="form-input" type="text" name="Temparature" placeholder="Temparature"><br><br>
+                <input class="form-input" type="text" name="Oxygen" placeholder="Oxygen"><br><br>
+                <input class="form-input" type="text" name="Humidity" placeholder="Humidity"><br><br>
+          </div>
+            <div class="predict">
+              <input type="submit" class="my-cta-button" value="Predict">
+            </div>
+      	</form>
+            </div>
+        <!-- Footer -->
+           <div class='footer my-8'>
+           <p class='footer-description'>Made with ❤️ by Vinay Naik.</p>
+           </div>
+      </div>
+    </body>
+</html>
